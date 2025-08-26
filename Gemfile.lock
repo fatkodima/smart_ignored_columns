@@ -63,8 +63,13 @@ GEM
     rubocop-ast (1.46.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-minitest (0.38.1)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.75.0, < 2.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
+    sqlite3 (2.7.3-x86_64-darwin)
     timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -74,13 +79,14 @@ GEM
     uri (1.0.3)
 
 PLATFORMS
-  ruby
   x86_64-darwin-21
 
 DEPENDENCIES
   rake (~> 13.0)
   rubocop
+  rubocop-minitest
   smart_ignored_columns!
+  sqlite3
 
 BUNDLED WITH
    2.6.9

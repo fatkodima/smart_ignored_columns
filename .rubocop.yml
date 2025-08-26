@@ -1,3 +1,6 @@
+plugins:
+  - rubocop-minitest
+
 AllCops:
   TargetRubyVersion: 3.2
   NewCops: enable
@@ -5,6 +8,15 @@ AllCops:
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  EnforcedStyle: brackets
 
 Gemspec/RequireMFA:
   Enabled: false
